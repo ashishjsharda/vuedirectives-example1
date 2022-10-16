@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+   <h1 v-text="title">Exercise 4</h1>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  data(){
+    return{
+      title: 'CSS Module Component',
+      subtitle: 'This is forth exercise'
+    }
   }
 }
 </script>
