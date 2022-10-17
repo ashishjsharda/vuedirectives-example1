@@ -1,6 +1,7 @@
 <template>
   <div id="app">
    <h1 v-text="title">Exercise 4</h1>
+    <h2 v-html="html"></h2>
   </div>
 </template>
 
@@ -11,7 +12,8 @@ export default {
   data(){
     return{
       title: 'CSS Module Component',
-      subtitle: 'This is forth exercise'
+      subtitle: 'This is forth exercise',
+      html: 'Stylise</br> HTML in </br> Vue Components',
     }
   }
 }
