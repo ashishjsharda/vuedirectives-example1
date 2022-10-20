@@ -15,16 +15,22 @@
 </template>
 
 <script>
-
-
 export default {
-  data(){
-    return{
-      title: 'CSS Module Component',
-      subtitle: 'This is forth exercise',
-      html: 'Stylise</br> HTML in </br> Vue Components',
+  data() {
+    return {
+      // v-text
+      text: 'Directive text',
+      // v-html
+      html: 'Stylise</br>HTML in<br/><b>your data</b>',
+      // v-bind
+      link: {
+        url: 'https://google.com',
+        target: '_blank',
+        tabindex: '0',
+        title: 'Go to Google',
+      },
     }
-  }
+  },
 }
 </script>
 
