@@ -1,8 +1,17 @@
 <template>
   <div id="app">
-   <h1 v-text="title">Exercise 4</h1>
-    <h2 v-html="html"></h2>
+   <h1 v-if ="false" v-text="title">Loading</h1>
+    <h2 v-else-if="false" v-html="html"></h2>
+    <a
+    v-else
+    :href="link.url"
+    :target="link.target"
+    :tabindex="link.tabindex"
+    v-text="link.title"
+
+    />
   </div>
+
 </template>
 
 <script>
